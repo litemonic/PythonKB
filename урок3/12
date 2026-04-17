@@ -1,0 +1,27 @@
+num1 = int(input("Введите первое число: "))
+num2 = int(input("Введите второе число: "))
+action = input("Выберите вариант действия (+, -, *, /, **, //)")
+print("=" * 30)
+print(" " * 8,"Калькулятор")
+print("=" * 30)
+
+if action == '+':
+    print (num1 + num2)
+elif action == '-':
+    print (num1 - num2)
+elif action == '*':
+    print (num1 * num2)
+elif action == '/':
+    if num2 == 0:
+        print("Error. На ноль делить нельзя!")
+    else:
+        print (num1 / num2)
+elif action == '//':
+    if num2 == 0:
+        print("Error. На ноль делить нельзя!")
+    else:
+        print (num1 // num2)
+elif action == '**':
+    print(num1**num2)
+else:
+    print("Такого знака нет.")
